@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Juego de Adivina n&uacute;mero</h1>
+
+    <p>Se ha generado un valor de entre 1 y 100. Vea si puede adivinarlo en 10 turnos o menos. Le diremos si su
+        estimación fue demasiado alta o demasiado baja.</p>
+
+    <div class="form">
+        <label for="campoAdivina">Ingrese el valor que piensa: </label>
+        <input type="text" id="campoAdivina" class="campoAdivina">
+        <input type="submit" value="Adivina" class="adivinaSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="adivinanzas"></p>
+        <p class="ultimoResultado"></p>
+        <p class="bajoOAlto"></p>
+    </div>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="../public/boton.css">
+    <script src="../public/btn.js"></script>
+    <button onclick="goToHome()">Inicio</button>
+</body>
+
+</html>
